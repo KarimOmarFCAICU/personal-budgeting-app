@@ -19,8 +19,12 @@
 
     <main class="main-content">
         <header>
-            <h1>Financial Reports</h1>
-            <button class="btn-primary">Download PDF</button>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <button class="menu-toggle" id="menuBtn" aria-label="Toggle Menu">☰</button>
+                <h1>Reports</h1> </div>
+            <div class="header-actions">
+                <button class="btn-primary">+ New Action</button>
+            </div>
         </header>
 
         <div class="card" style="text-align: center; padding: 4rem;">
@@ -31,5 +35,13 @@
         </div>
     </main>
 </div>
+<script>
+    const menuBtn = document.getElementById('menuBtn');
+    const sidebar = document.querySelector('.sidebar');
+
+    menuBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+    });
+</script>
 </body>
 </html>
