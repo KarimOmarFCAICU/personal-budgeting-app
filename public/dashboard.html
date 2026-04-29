@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - BudgetWise</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+        <h2>BudgetWise</h2>
+        <ul class="nav-links">
+            <li><a href="/dashboard" class="active">Dashboard</a></li>
+            <li><a href="/transactions">Transactions</a></li>
+            <li><a href="/budgets">Budgets & Goals</a></li>
+            <li><a href="/reports">Reports</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <header>
+            <h1>Welcome back, Karim!</h1>
+            <button class="btn-primary">+ New Transaction</button>
+        </header>
+
+        <div class="grid-cards">
+            <div class="card">
+                <h3>Total Balance</h3>
+                <div class="amount">EGP 1,250.00</div>
+            </div>
+            <div class="card">
+                <h3>Monthly Income</h3>
+                <div class="amount text-success">+EGP 3,200.00</div>
+            </div>
+            <div class="card">
+                <h3 class="text-danger">Monthly Expenses</h3>
+                <div class="amount" style="color: #EF4444; font-weight: bold;">-EGP 1,950.00</div>
+            </div>
+        </div>
+
+        <h2 style="margin-bottom: 1rem; font-size: 1.25rem;">Recent Overview</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                <tr><th>Date</th><th>Description</th><th>Amount</th></tr>
+                </thead>
+                <tbody>
+                <tr><td>Oct 24</td><td>Book: Clean Code</td><td class="text-danger">-EGP 450.00</td></tr>
+                <tr><td>Oct 22</td><td>Monthly Allowance</td><td class="text-success">+EGP 3,200.00</td></tr>
+                <tr><td>Oct 20</td><td>FC Barcelona Match Ticket</td><td class="text-danger">-EGP 1,500.00</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>
+</body>
+</html>

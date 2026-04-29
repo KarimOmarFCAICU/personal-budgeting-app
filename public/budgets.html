@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Budgets - BudgetWise</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+        <h2>BudgetWise</h2>
+        <ul class="nav-links">
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/transactions">Transactions</a></li>
+            <li><a href="/budgets" class="active">Budgets & Goals</a></li>
+            <li><a href="/reports">Reports</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <header>
+            <h1>Monthly Budgets</h1>
+            <button class="btn-primary">+ Create Budget</button>
+        </header>
+
+        <div class="grid-cards">
+            <div class="card">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                    <h3 style="margin: 0; color: var(--text-main); font-weight: bold;">Education</h3>
+                    <span class="text-danger">EGP 570 / 600</span>
+                </div>
+                <p style="font-size: 0.875rem; color: var(--text-muted);">Warning: Nearing limit!</p>
+                <div class="progress-wrapper">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 95%; background-color: var(--danger-color);"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                    <h3 style="margin: 0; color: var(--text-main); font-weight: bold;">Entertainment</h3>
+                    <span class="text-muted">EGP 1,500 / 2,000</span>
+                </div>
+                <p style="font-size: 0.875rem; color: var(--text-muted);">On track</p>
+                <div class="progress-wrapper">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>
